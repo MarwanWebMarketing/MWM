@@ -1,0 +1,98 @@
+body {
+    direction: rtl; /* النص يبدأ من اليمين إلى اليسار */
+    font-family: Arial, sans-serif;
+    line-height: 1.5; /* تباعد الأسطر */
+    font-size: 5m; /* حجم الخط  */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* لون خلفية مريح للعين */
+    color: #333; /* لون النص */
+}
+header {
+    font-size: 1.0em; /* حجم الخط للعناوين */
+    font-weight: bold; /* جعل الخط عريض */
+    background: #3b3a3a;
+    color: #fff;
+    padding: 0px 0;/* تعديل قيمة padding لتكون أكثر ملاءمة */
+    text-align: center;
+    position: fixed; /* تثبيت الشريط الرئيسي */
+    width: 100%; /* عرض كامل الصفحة */
+    top: 0; /* تثبيت في أعلى الصفحة */
+    z-index: 100; /* تأكد من أن الشريط الرئيسي فوق المحتوى الآخر */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* استخدام flexbox لتوزيع العناصر */
+    justify-content: center; /* جعل القوائم في وسط الصفحة */
+    margin: 0; /* إزالة الهوامش الافتراضية */
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+main {
+    padding: 80px 20px 20px; /* إضافة تباعد أعلى لتعويض الشريط الرئيسي المثبت */
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px; /* زيادة التباعد الداخلي */
+    border: 1px solid #cccccc;
+    background-color: #fff; /* خلفية بيضاء للمقالات */
+    border-radius: 8px; /* زوايا مستديرة */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* إضافة ظل خفيف */
+}
+
+section h2 {
+    color: #0e0e0e; /* لون العناوين */
+    font-size: 1.5em; /* حجم الخط للعناوين */
+    margin-bottom: 5; /* تباعد أسفل العناوين */
+}
+
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.image-grid img {
+    width: 200px;
+    height: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+p {
+    max-width: 700px; /* تحديد عرض الفقرة (اختياري) */
+    margin: 0; /* إضافة فراغ حول الفقرات وجعلها في المنتصف */
+    text-align: justify; /* جعل النص مبرر */
+    font-size: 1.1em; /* حجم الخط للنصوص */
+    line-height: 1.5; /* تباعد الأسطر للنصوص */
+    color: #000000; /* لون النصوص */
+}
+h2, ul {
+    margin: 5px; /* إضافة فراغ حول الفقرات وجعلها في المنتصف */
+    text-align: justify; /* جعل النص مبرر */
+    font-size: 1.1em; /* حجم الخط للنصوص */
+    line-height: 1.5; /* تباعد الأسطر للنصوص */
+    color: #000000; /* لون النصوص */
+}
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
