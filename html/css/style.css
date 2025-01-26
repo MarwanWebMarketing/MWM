@@ -1,7 +1,7 @@
 body {
     direction: rtl; /* النص يبدأ من اليمين إلى اليسار */
     font-family: Arial, sans-serif;
-    line-height: 1.5; /* تباعد الأسطر */
+    line-height: 1; /* تباعد الأسطر */
     font-size: 5m; /* حجم الخط  */
     margin: 0;
     padding: 0;
@@ -99,4 +99,7 @@ footer {
 }
 a:hover {
     background-color: #f3b0b5;
+}
+.icon {
+    color: #3d9ed7; /* لون الأيقونات */
 }
